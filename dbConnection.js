@@ -2,6 +2,7 @@ const mysql = require('mysql2');
 const dotenv = require('dotenv');
 dotenv.config();
 
+
 const dbPool = mysql.createPool({
     host: process.env.DBHOST,
     database: process.env.DBNAME,
