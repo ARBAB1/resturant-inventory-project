@@ -11,6 +11,7 @@ exports.verifyToken = async (req, res, next) => {
         return res.status(401).send({ success: false, message: 'Unauthorized: No token provided' });
     }
 
+    
     const [checkAccessTokenInDBUsers] = await dbConnection.execute(`SELECT * from users where access_token = '${access_token}'`)
     if (checkAccessTokenInDBUsers.length == 0) {
         return res.status(400).send({

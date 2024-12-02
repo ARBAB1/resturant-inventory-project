@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 const dbConnection = require('../dbConnection');
 
 
+
 exports.generateToken = async (data) => {
     try {
         var payload = { 
