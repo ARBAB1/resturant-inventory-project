@@ -6,6 +6,7 @@ const { verifyToken } = require('../middleware/verify-token-middleware');
 
 const { signUp, loginUser, getAllUsers } = require('../controller/user-controllers');
 
+
 router.post('/users/signUp-user', XAPIKEYMIDDLEWARE, signUp);
 
 router.post('/users/login-user', XAPIKEYMIDDLEWARE, loginUser);

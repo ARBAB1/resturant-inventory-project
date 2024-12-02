@@ -2,6 +2,7 @@ const util = require("util");
 const multer = require("multer");
 const fs = require("fs").promises;
 
+
 let storageposts = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, "./resources/assets/static/assets/uploads/profiles/");

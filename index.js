@@ -12,6 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use(userRoutes);  
 
+
 app.get('/', (req, res) => {
     res.send('Welcome to Restaurant Management');
 });

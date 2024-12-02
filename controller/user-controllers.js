@@ -69,6 +69,7 @@ exports.signUp = async (req, res) => {
         "/resources/static/assets/uploads/profiles/" + req.file.filename;
     }
 
+    
     const signupArray = [
       newEmpUserId,
       name,
